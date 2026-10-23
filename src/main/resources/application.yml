@@ -7,9 +7,9 @@ spring:
     mapper:
       allow-coercion-of-scalars: false
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:postgres}?connectTimeout=5&socketTimeout=5}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:ecommerce_db}?connectTimeout=5&socketTimeout=5}
     username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    password: ${DB_PASSWORD}
     hikari:
       connection-timeout: 5000
       initialization-fail-timeout: 5000
